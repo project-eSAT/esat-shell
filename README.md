@@ -2,6 +2,13 @@
 ###### secondary shell for raspberry pi for use in the esat project
 .. that no one needed
 
+`work in progress,`
+
+`system()`was tricky with strings and didn't build (fu abi::cxx11), so i ~~stole~~ borrowed code from [here](https://stackoverflow.com/questions/52164723/how-to-execute-a-command-and-get-return-code-stdout-and-stderr-of-command-in-c), and tomorrow (~~it's technically today~~) 
+
+i'll replace the classified functions with `exec()`
+
+
 **fu c++**
 
 stupid types took me 2 hours to meddle with
