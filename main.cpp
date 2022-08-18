@@ -93,12 +93,12 @@ map<string, string> builtin = {
 };
 
 string os (string cmd) {
-    system(cmd.c_str());
+    printf("%s\n", exec(cmd.c_str()).c_str());
 }
 
 string test (string cmd) {
     string test_command = "cd test && python3 " + cmd+".py";
-    system(cmd.c_str());
+    printf("%s\n", exec(test_command.c_str()).c_str());
 }
 
 string help (string cmd) {
@@ -107,12 +107,15 @@ string help (string cmd) {
         cout << builtin[cmd] << endl;
     }
     else {
-        system(("help " + cmd).c_str());
+        string help_command = "help " + cmd;
+        printf("%s\n", exec(help_command.c_str()).c_str());
     }
 }
 
-void src (string cmd) {
-    system(cmd.c_str());
+string src (string cmd) {
+//    placeholder
+    string src_command = "git help " + cmd;
+    printf("%s\n", exec(src_command.c_str()).c_str());
 }
 
 void shell() {
