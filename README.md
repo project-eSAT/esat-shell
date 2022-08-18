@@ -6,8 +6,10 @@
 
 `system()`was tricky with strings and didn't build (fu abi::cxx11), so i ~~stole~~ borrowed code from [here](https://stackoverflow.com/questions/52164723/how-to-execute-a-command-and-get-return-code-stdout-and-stderr-of-command-in-c), and tomorrow (~~it's technically today~~) 
 
-i'll replace the classified functions with `exec()`
+~~i'll replace the classified functions with `exec()`~~
+did that, just need to fix `help` and make the shell not exit upon one command 
 
+(is there `pass` in c++?)
 
 **fu c++**
 
